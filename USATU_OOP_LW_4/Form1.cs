@@ -13,9 +13,6 @@ namespace USATU_OOP_LW_4
             InitializeComponent();
             _selectableCirclesHandler = new SelectableCirclesHandler();
             this.KeyPreview = true;
-            this.SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
-            this.SetStyle(ControlStyles.AllPaintingInWmPaint, true);
-            this.SetStyle(ControlStyles.UserPaint, true);
 
             _selectableCirclesHandler.NeedUpdate += panelForCircles_Update;
         }
