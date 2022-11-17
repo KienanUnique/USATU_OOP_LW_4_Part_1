@@ -2,20 +2,16 @@
 
 namespace USATU_OOP_LW_4
 {
-    public partial class Form1 : Form
+    public partial class FormMain : Form
     {
         private readonly SelectableCirclesHandler _selectableCirclesHandler;
         private bool _wasControlAlreadyPressed;
-        private bool _wasDeleteAlreadyPressed;
 
-        public Form1()
+        public FormMain()
         {
             InitializeComponent();
             _selectableCirclesHandler = new SelectableCirclesHandler();
             this.KeyPreview = true;
-            this.SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
-            this.SetStyle(ControlStyles.AllPaintingInWmPaint, true);
-            this.SetStyle(ControlStyles.UserPaint, true);
 
             _selectableCirclesHandler.NeedUpdate += panelForCircles_Update;
         }
@@ -27,24 +23,10 @@ namespace USATU_OOP_LW_4
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-            switch (e.KeyCode)
+            if (e.KeyCode == Keys.ControlKey && !_wasControlAlreadyPressed)
             {
-                case Keys.ControlKey:
-                    if (!_wasControlAlreadyPressed)
-                    {
-                        _selectableCirclesHandler.EnableMultipleSelection();
-                        _wasControlAlreadyPressed = true;
-                    }
-
-                    break;
-                case Keys.Delete:
-                    if (!_wasDeleteAlreadyPressed)
-                    {
-                        _selectableCirclesHandler.DeleteAllSelected();
-                        _wasDeleteAlreadyPressed = true;
-                    }
-
-                    break;
+                _selectableCirclesHandler.EnableMultipleSelection();
+                _wasControlAlreadyPressed = true;
             }
         }
 
@@ -57,7 +39,7 @@ namespace USATU_OOP_LW_4
                     _wasControlAlreadyPressed = false;
                     break;
                 case Keys.Delete:
-                    _wasDeleteAlreadyPressed = false;
+                    _selectableCirclesHandler.DeleteAllSelected();
                     break;
             }
         }

@@ -1,6 +1,5 @@
-﻿using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
+﻿using System.Drawing;
+using CustomDoublyLinkedListLibrary;
 
 namespace USATU_OOP_LW_4
 {
@@ -11,21 +10,26 @@ namespace USATU_OOP_LW_4
         public event NeedUpdateHandler NeedUpdate;
 
 
-        private readonly List<SelectableCircle> _allCircles = new List<SelectableCircle>();
+        private readonly CustomDoublyLinkedList<SelectableCircle> _allCircles =
+            new CustomDoublyLinkedList<SelectableCircle>();
+
         private bool _isMultipleSelectionEnabled;
 
         public void ProcessClick(Point clickPoint)
         {
             bool wasOnCircleClick = false;
-            foreach (var circle in _allCircles.Where(circle => circle.IsClicked(clickPoint)))
+            for (var i = _allCircles.GetPointerOnBeginning(); !i.IsBorderReached(); i.MoveNext())
             {
-                wasOnCircleClick = true;
-                if (!circle.IsSelected() && !_isMultipleSelectionEnabled)
+                if (i.Current.IsClicked(clickPoint))
                 {
-                    UnselectAll();
-                }
+                    wasOnCircleClick = true;
+                    if (!i.Current.IsSelected() && !_isMultipleSelectionEnabled)
+                    {
+                        UnselectAll();
+                    }
 
-                circle.ProcessClick();
+                    i.Current.ProcessClick();
+                }
             }
 
             if (!wasOnCircleClick)
@@ -50,9 +54,9 @@ namespace USATU_OOP_LW_4
 
         public void PaintAllCirclesOnGraphics(Graphics graphics)
         {
-            foreach (var circle in _allCircles)
+            for (var i = _allCircles.GetPointerOnBeginning(); !i.IsBorderReached(); i.MoveNext())
             {
-                circle.DrawCircleOnGraphics(graphics);
+                i.Current.DrawCircleOnGraphics(graphics);
             }
         }
 
@@ -68,15 +72,27 @@ namespace USATU_OOP_LW_4
 
         public void DeleteAllSelected()
         {
-            _allCircles.RemoveAll(circle => circle.IsSelected());
-            NeedUpdate?.Invoke();
+            bool needUpdate = false;
+            for (var i = _allCircles.GetPointerOnBeginning(); !i.IsBorderReached(); i.MoveNext())
+            {
+                if (i.Current.IsSelected())
+                {
+                    needUpdate = true;
+                    _allCircles.RemovePointerElement(i);
+                }
+            }
+
+            if (needUpdate)
+            {
+                NeedUpdate?.Invoke();
+            }
         }
 
         private void UnselectAll()
         {
-            foreach (var circle in _allCircles)
+            for (var i = _allCircles.GetPointerOnBeginning(); !i.IsBorderReached(); i.MoveNext())
             {
-                circle.Unselect();
+                i.Current.Unselect();
             }
         }
     }
