@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace USATU_OOP_LW_4
+namespace USATU_OOP_LW_4_Part_1
 {
     public partial class FormMain : Form
     {

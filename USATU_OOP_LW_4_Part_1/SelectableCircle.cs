@@ -1,6 +1,6 @@
 ﻿using System.Drawing;
 
-namespace USATU_OOP_LW_4
+namespace USATU_OOP_LW_4_Part_1
 {
     public class SelectableCircle
     {
