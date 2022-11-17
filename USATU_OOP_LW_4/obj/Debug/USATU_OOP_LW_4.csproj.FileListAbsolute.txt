@@ -8,7 +8,7 @@ C:\Users\wi\RiderProjects\USATU_OOP_LW_4\USATU_OOP_LW_4\obj\Debug\USATU_OOP_LW_4
 C:\Users\wi\RiderProjects\USATU_OOP_LW_4\USATU_OOP_LW_4\obj\Debug\USATU_OOP_LW_4.csproj.CoreCompileInputs.cache
 C:\Users\wi\RiderProjects\USATU_OOP_LW_4\USATU_OOP_LW_4\obj\Debug\USATU_OOP_LW_4.exe
 C:\Users\wi\RiderProjects\USATU_OOP_LW_4\USATU_OOP_LW_4\obj\Debug\USATU_OOP_LW_4.pdb
-C:\Users\wi\RiderProjects\USATU_OOP_LW_4\USATU_OOP_LW_4\obj\Debug\USATU_OOP_LW_4.Form1.resources
 C:\Users\wi\RiderProjects\USATU_OOP_LW_4\USATU_OOP_LW_4\bin\Debug\CustomDoublyLinkedListLibrary.dll
 C:\Users\wi\RiderProjects\USATU_OOP_LW_4\USATU_OOP_LW_4\bin\Debug\CustomDoublyLinkedListLibrary.pdb
 C:\Users\wi\RiderProjects\USATU_OOP_LW_4\USATU_OOP_LW_4\obj\Debug\USATU_OOP_LW_4.csproj.CopyComplete
+C:\Users\wi\RiderProjects\USATU_OOP_LW_4\USATU_OOP_LW_4\obj\Debug\USATU_OOP_LW_4.FormMain.resources

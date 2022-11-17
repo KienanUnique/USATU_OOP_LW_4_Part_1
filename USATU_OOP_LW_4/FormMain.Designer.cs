@@ -1,6 +1,6 @@
 ﻿namespace USATU_OOP_LW_4
 {
-    partial class Form1
+    partial class FormMain
     {
         /// <summary>
         /// Required designer variable.
@@ -42,14 +42,14 @@
             this.panelForCircles.Paint += new System.Windows.Forms.PaintEventHandler(this.panelForCircles_Paint);
             this.panelForCircles.MouseClick += new System.Windows.Forms.MouseEventHandler(this.panelForCircles_MouseClick);
             // 
-            // Form1
+            // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panelForCircles);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Name = "Form1";
+            this.Name = "FormMain";
             this.Text = "LW 4";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);

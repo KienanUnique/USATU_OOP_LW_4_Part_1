@@ -2,13 +2,13 @@
 
 namespace USATU_OOP_LW_4
 {
-    public partial class Form1 : Form
+    public partial class FormMain : Form
     {
         private readonly SelectableCirclesHandler _selectableCirclesHandler;
         private bool _wasControlAlreadyPressed;
         private bool _wasDeleteAlreadyPressed;
 
-        public Form1()
+        public FormMain()
         {
             InitializeComponent();
             _selectableCirclesHandler = new SelectableCirclesHandler();
