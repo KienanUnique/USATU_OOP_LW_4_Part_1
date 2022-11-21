@@ -1,6 +1,6 @@
 ﻿using System.Drawing;
 
-namespace USATU_OOP_LW_4
+namespace USATU_OOP_LW_4_Part_1
 {
     public class SelectableCircle
     {
@@ -47,8 +47,8 @@ namespace USATU_OOP_LW_4
 
         public bool IsClicked(Point clickPoint)
         {
-            int tmpX = clickPoint.X - _circleRectangle.Location.X - CircleRadius;
-            int tmpY = clickPoint.Y - _circleRectangle.Location.Y - CircleRadius;
+            int tmpX = clickPoint.X - (_circleRectangle.Location.X + CircleRadius);
+            int tmpY = clickPoint.Y - (_circleRectangle.Location.Y + CircleRadius);
             return tmpX * tmpX + tmpY * tmpY <= CircleRadius * CircleRadius;
         }
 

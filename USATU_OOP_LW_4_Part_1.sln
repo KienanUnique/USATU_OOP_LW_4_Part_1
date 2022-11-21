@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "USATU_OOP_LW_4", "USATU_OOP_LW_4\USATU_OOP_LW_4.csproj", "{CC4AA267-A49E-453B-968D-F70839BA0B19}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "USATU_OOP_LW_4_Part_1", "USATU_OOP_LW_4_Part_1\USATU_OOP_LW_4_Part_1.csproj", "{CC4AA267-A49E-453B-968D-F70839BA0B19}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomDoublyLinkedListLibrary", "CustomDoublyLinkedListLibrary\CustomDoublyLinkedListLibrary.csproj", "{875A03C4-390A-49D8-B7A0-5FCCAEBEB190}"
 EndProject

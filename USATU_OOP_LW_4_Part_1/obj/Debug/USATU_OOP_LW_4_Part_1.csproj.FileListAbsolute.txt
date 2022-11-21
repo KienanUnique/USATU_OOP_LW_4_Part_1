@@ -1,0 +1,14 @@
+C:\Users\wi\RiderProjects\USATU_OOP_LW_4_Part_1\USATU_OOP_LW_4_Part_1\bin\Debug\USATU_OOP_LW_4_Part_1.exe.config
+C:\Users\wi\RiderProjects\USATU_OOP_LW_4_Part_1\USATU_OOP_LW_4_Part_1\bin\Debug\USATU_OOP_LW_4_Part_1.exe
+C:\Users\wi\RiderProjects\USATU_OOP_LW_4_Part_1\USATU_OOP_LW_4_Part_1\bin\Debug\USATU_OOP_LW_4_Part_1.pdb
+C:\Users\wi\RiderProjects\USATU_OOP_LW_4_Part_1\USATU_OOP_LW_4_Part_1\bin\Debug\CustomDoublyLinkedListLibrary.dll
+C:\Users\wi\RiderProjects\USATU_OOP_LW_4_Part_1\USATU_OOP_LW_4_Part_1\bin\Debug\CustomDoublyLinkedListLibrary.pdb
+C:\Users\wi\RiderProjects\USATU_OOP_LW_4_Part_1\USATU_OOP_LW_4_Part_1\obj\Debug\USATU_OOP_LW_4_Part_1.csproj.AssemblyReference.cache
+C:\Users\wi\RiderProjects\USATU_OOP_LW_4_Part_1\USATU_OOP_LW_4_Part_1\obj\Debug\USATU_OOP_LW_4_Part_1.csproj.SuggestedBindingRedirects.cache
+C:\Users\wi\RiderProjects\USATU_OOP_LW_4_Part_1\USATU_OOP_LW_4_Part_1\obj\Debug\USATU_OOP_LW_4_Part_1.FormMain.resources
+C:\Users\wi\RiderProjects\USATU_OOP_LW_4_Part_1\USATU_OOP_LW_4_Part_1\obj\Debug\USATU_OOP_LW_4_Part_1.Properties.Resources.resources
+C:\Users\wi\RiderProjects\USATU_OOP_LW_4_Part_1\USATU_OOP_LW_4_Part_1\obj\Debug\USATU_OOP_LW_4_Part_1.csproj.GenerateResource.cache
+C:\Users\wi\RiderProjects\USATU_OOP_LW_4_Part_1\USATU_OOP_LW_4_Part_1\obj\Debug\USATU_OOP_LW_4_Part_1.csproj.CoreCompileInputs.cache
+C:\Users\wi\RiderProjects\USATU_OOP_LW_4_Part_1\USATU_OOP_LW_4_Part_1\obj\Debug\USATU_OOP_LW_4_Part_1.csproj.CopyComplete
+C:\Users\wi\RiderProjects\USATU_OOP_LW_4_Part_1\USATU_OOP_LW_4_Part_1\obj\Debug\USATU_OOP_LW_4_Part_1.exe
+C:\Users\wi\RiderProjects\USATU_OOP_LW_4_Part_1\USATU_OOP_LW_4_Part_1\obj\Debug\USATU_OOP_LW_4_Part_1.pdb
