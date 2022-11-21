@@ -34,19 +34,10 @@ namespace USATU_OOP_LW_4_Part_1
 
             if (!wasOnCircleClick)
             {
-                if (_allCircles.Count == 0)
-                {
-                    _allCircles.Add(new SelectableCircle(clickPoint, true));
-                }
-                else
-                {
-                    if (_allCircles.Count == 1)
-                    {
-                        UnselectAll();
-                    }
-
-                    _allCircles.Add(new SelectableCircle(clickPoint, false));
-                }
+                if (_allCircles.Count == 1) 
+                    UnselectAll();
+                
+                _allCircles.Add(new SelectableCircle(clickPoint, _allCircles.Count == 0));
             }
 
             NeedUpdate?.Invoke();
